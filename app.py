@@ -41,16 +41,9 @@ def add_cors_headers(response):
 
 MAIN_WEBSITE_URL = os.environ.get('MAIN_WEBSITE_URL', 'https://aahar-parampara.vercel.app/').rstrip('/') + '/'
 
-# Root Platform Route: If root index.html exists, serve it; otherwise redirect directly to the actual main website
+# QR Discovery Landing Page is the default root route
 @app.route('/')
 @app.route('/index.html')
-def index():
-    root_index = os.path.join(BASE_DIR, 'index.html')
-    if os.path.exists(root_index) and root_index != os.path.join(DISCOVER_DIR, 'index.html'):
-        return send_from_directory(BASE_DIR, 'index.html')
-    return redirect(MAIN_WEBSITE_URL)
-
-# QR Discovery Landing Page
 @app.route('/discover')
 @app.route('/discover/')
 @app.route('/discover/index.html')
