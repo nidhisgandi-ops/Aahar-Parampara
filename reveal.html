@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aahar-Parampara | Heritage Reveal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mobile-app">
+    <!-- Cinematic Loading Sequence -->
+    <div id="loading-sequence">
+        <div class="particles" id="loading-particles"></div>
+        <div class="loading-content">
+            <h1 class="brand-title fade-in-out delay-1">Aahar-Parampara</h1>
+            <div class="manuscript-line fade-in-out delay-2"></div>
+            <p class="loading-text fade-in-out delay-3">Unlocking India's Forgotten Food Heritage...</p>
+            <div class="glowing-orb"></div>
+        </div>
+    </div>
+
+    <!-- Heritage Reveal Container -->
+    <div id="reveal-container" class="hidden">
+        <div class="reveal-header slide-down">
+            <h2 class="gold-accent-text">YOUR HERITAGE DISCOVERY</h2>
+            <div class="decorative-divider"></div>
+        </div>
+
+        <div id="food-card" class="premium-card fade-up">
+            <div id="food-image-container" class="artifact-image">
+                <!-- SVG generated in JS -->
+            </div>
+            
+            <div class="card-content">
+                <h1 id="food-name" class="cinematic-title"></h1>
+                <div class="region-badge">
+                    <span class="icon">📍</span>
+                    <span id="food-region"></span>
+                </div>
+
+                <div class="heritage-section">
+                    <h3>🏛️ Cultural Heritage</h3>
+                    <p id="food-heritage" class="heritage-text"></p>
+                </div>
+
+                <div class="heritage-section">
+                    <h3>🌿 Traditional Ingredients</h3>
+                    <ul id="food-ingredients" class="ingredient-list"></ul>
+                </div>
+
+                <div class="heritage-section status-section">
+                    <small>Source Status: <span id="food-status"></span></small>
+                </div>
+            </div>
+        </div>
+
+        <div class="did-you-know-card fade-up delay-1">
+            <h3>💡 Did You Know?</h3>
+            <p>Traditional Indian foods are deeply connected to their local geography, climate, and seasons. Ingredients were historically chosen to support the body's adaptation to regional environmental triggers, reflecting centuries of passed-down cultural heritage.</p>
+        </div>
+
+        <div class="action-buttons fade-up delay-2">
+            <button id="btn-discover" class="btn primary-gold">🎲 DISCOVER ANOTHER HERITAGE</button>
+            <a href="../index.html" id="btn-explore" class="btn secondary-gold">EXPLORE THE COMPLETE HERITAGE →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
